@@ -2,10 +2,10 @@ import argparse
 import ast
 import sys
 from pathlib import Path
-from src.extraccion import extraer_todas_las_funciones
-from src.normalizacion import normalizar_arbol_funcion
-from src.serializacion import serializar_pre_order
-from src.comparacion import similitud_jaccard, UMBRAL_DUPLICADO
+from extraccion import extraer_todas_las_funciones
+from normalizacion import normalizar_arbol_funcion
+from serializacion import serializar_pre_order
+from comparacion import similitud_jaccard, UMBRAL_DUPLICADO
 
 # Devuelve el nombre del archivo y el nombre de la función a partir de un string con formato 'archivo.py:nombre_funcion'.
 def parsear_objetivo(objetivo: str):

@@ -1,8 +1,8 @@
 import ast
 import pytest
-from src.normalizacion import normalizar_arbol_funcion
-from src.serializacion import serializar_pre_order
-from src.comparacion import similitud_jaccard, UMBRAL_DUPLICADO
+from normalizacion import normalizar_arbol_funcion
+from serializacion import serializar_pre_order
+from comparacion import similitud_jaccard, UMBRAL_DUPLICADO
 
 def pipeline(codigo_funcion: str):
     modulo = ast.parse(codigo_funcion)
